@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#fbf4ee">
+  <title id="pageTitle">程渝在路上</title>
+  <link rel="stylesheet" href="assets/styles.css?v=20260820-timeline-hide-v5">
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js" defer></script>
+  <script src="assets/app.js?v=20260820-timeline-hide-v5" defer></script>
+</head>
+<body>
+  <main class="device">
+    <header class="topbar">
+      <a class="iconbtn" href="javascript:history.back()" aria-label="返回"><i data-lucide="chevron-left"></i></a>
+      <div class="titles">
+        <h1 id="travelTitle">程渝在路上</h1>
+        <p id="travelSubtitle">小小与程渝的现实漫游</p>
+      </div>
+      <button class="iconbtn" id="refreshBtn" type="button" aria-label="刷新旅程"><i data-lucide="refresh-cw"></i></button>
+    </header>
+
+    <p class="connection" id="connection">正在连接旅程档案...</p>
+
+    <section class="section hero-section" aria-labelledby="sceneTitle">
+      <div class="section-head">
+        <h2 id="sceneTitle">此刻看到的</h2>
+        <span id="sceneUpdated">尚未出发</span>
+      </div>
+      <div class="hero-card" id="heroCard">
+        <div class="hero-tag idle" id="statusTag"><span></span><b>尚未出发</b></div>
+        <div class="hero-empty" id="heroEmpty">
+          <i data-lucide="door-open"></i>
+          <strong>旅程还没有开始</strong>
+          <p id="heroEmptyText">等程渝想去某个真实的地方看看，这里就会亮起来。</p>
+        </div>
+        <img class="hero-image" id="heroImage" alt="当前 Google 历史街景" hidden>
+        <div class="hero-scrim" id="heroScrim" hidden></div>
+        <div class="hero-info" id="heroInfo" hidden>
+          <h3 id="placeName"></h3>
+          <p id="sceneMeta"></p>
+        </div>
+      </div>
+      <p class="hero-note" id="streetNote"></p>
+    </section>
+
+    <section class="section" aria-labelledby="weatherTitle">
+      <div class="section-head">
+        <h2 id="weatherTitle">此刻环境</h2>
+        <span id="weatherUpdated"></span>
+      </div>
+      <div class="weather-strip" id="weatherStrip">
+        <div class="weather-empty"><i data-lucide="cloud-off"></i><span>还没有环境资料</span></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="wordsTitle">
+      <div class="section-head">
+        <h2 id="wordsTitle">程渝的话</h2>
+        <span>关键节点原话</span>
+      </div>
+      <div class="msg-bubble" id="wordsBubble">
+        <div class="msg-empty"><i data-lucide="message-circle"></i><span>旅途中还没有留下原话</span></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="timelineTitle">
+      <div class="section-head">
+        <h2 id="timelineTitle">走过的路</h2>
+        <span id="eventCount">0 个节点</span>
+      </div>
+      <div class="timeline" id="timeline">
+        <div class="timeline-empty"><i data-lucide="route"></i><strong>旅程还没有开始</strong></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="statusTitle">
+      <div class="section-head"><h2 id="statusTitle">旅程状态</h2></div>
+      <div class="stub" id="journeyStats">
+        <div class="stub-empty">还没有正在进行的旅程</div>
+      </div>
+    </section>
+
+    <section class="section archive-section" aria-labelledby="archiveTitle">
+      <div class="section-head">
+        <h2 id="archiveTitle">历史旅程</h2>
+        <span id="archiveCount">0 段</span>
+      </div>
+      <div id="archiveList" class="archive-list">
+        <div class="archive-empty">还没有旅程被收进档案里</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
